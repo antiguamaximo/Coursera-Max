@@ -5,17 +5,30 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>2nd Module 2</title>
+
 <style type="text/css">
 	#bg {
-		width: 500px;
-		height: 500px;
+		width: 1200px;
+		height: 1200px;
 		background: url("QUADMax_Valhalla.png") no-repeat top center;
 		background-color: blueviolet;
 	}
-
+@media (min-width 1200px) {
+	#bg {
+		width: 50%;
+		height: 50%;
+		background-color: black;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	#bg {
+		width: 90%;
+		height: 90%;
+		background-color: yellow;
+	}
 </style>
-</head>
 
+</head>
 <body>
 <div id='bg'> Background properties are fun!</div>
 </body>
